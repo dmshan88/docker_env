@@ -1,0 +1,1 @@
+ docker run -itd --privileged --name wmdw wmdw:v1 /usr/sbin/init

@@ -1,0 +1,3 @@
+ docker run -itd --privileged --name mongo -p 27017:27017 -v /home/shan/code/git/docker_env/mongo-local/runtime/master/config/mongod.conf:/etc/mongod.conf  -v /home/shan/code/git/docker_env/mongo-local/runtime/master/log:/var/log/mongodb mongotest:v1 /usr/sbin/init
+ docker run -itd --privileged --name mongo1 -p 27018:27017 -v /home/shan/code/git/docker_env/mongo-local/runtime/slave/config/mongod.conf:/etc/mongod.conf  -v /home/shan/code/git/docker_env/mongo-local/runtime/slave/log:/var/log/mongodb mongotest:v1 /usr/sbin/init
+ docker exec -it mongo /bin/bash
